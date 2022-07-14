@@ -11,8 +11,8 @@ function computerPLay() {
 
 
 function playRound(playerSelection, computerSelection) {
-    let playerFormatedSelection = playerSelection.toLowerCase();
-    if (playerFormatedSelection === "rock") {
+    let playerFormattedSelection = playerSelection.toLowerCase();
+    if (playerFormattedSelection === "rock") {
         if (computerSelection === "rock") {
             return "Draw!";
         } else if (computerSelection === "paper") {
@@ -20,7 +20,7 @@ function playRound(playerSelection, computerSelection) {
         } else {
             return "User wins!";
         }
-    } else if (playerFormatedSelection === "paper") {
+    } else if (playerFormattedSelection === "paper") {
         if (computerSelection === "rock") {
             return "User wins!";
         } else if (computerSelection === "paper") {
